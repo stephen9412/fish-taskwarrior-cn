@@ -4,6 +4,8 @@ Let Taskwarrior Speak Chinese 🗣️ — Manage Tasks the Natural Way
 
 [![GitHub stars](https://img.shields.io/github/stars/stephen9412/fish-taskwarrior-cn?style=social)](https://github.com/stephen9412/fish-taskwarrior-cn/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![繁體中文](https://img.shields.io/badge/DOCS-繁體中文-blue)](./README_zh-TW.md)
+[![简体中文](https://img.shields.io/badge/DOCS-简体中文-red)](./README_zh-CN.md)
 
 > 💡 **Find this useful? Give it a ⭐️ Star!** It's the best encouragement for open source developers and helps more people discover this project.
 
