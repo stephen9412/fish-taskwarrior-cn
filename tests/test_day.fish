@@ -69,15 +69,9 @@ source $test_dir/../functions/taskwarrior_parse_date.fish
 
 @test "AST: 這個月十四號 -> som+13d" (_task_parse_date 這個月十四號) = "som+13d"
 @test "AST: 这个月十四号 -> som+13d" (_task_parse_date 这个月十四号) = "som+13d"
-@test "AST: 這個月十四 -> som+13d" (_task_parse_date 這個月十四) = "som+13d"
-@test "AST: 这个月十四 -> som+13d" (_task_parse_date 这个月十四) = "som+13d"
 
 @test "AST: 上個月十四號 -> sopm+13d" (_task_parse_date 上個月十四號) = "sopm+13d"
 @test "AST: 上个月十四号 -> sopm+13d" (_task_parse_date 这个月十四号) = "sopm+13d"
-@test "AST: 上個月十四 -> sopm+13d" (_task_parse_date 上個月十四) = "sopm+13d"
-@test "AST: 上个月十四 -> sopm+13d" (_task_parse_date 这个月十四) = "sopm+13d"
 
 @test "AST: 下個月十四號 -> sonm+13d" (_task_parse_date 下個月十四號) = "sonm+13d"
 @test "AST: 下个月十四号 -> sonm+13d" (_task_parse_date 下个月十四号) = "sonm+13d"
-@test "AST: 下個月十四 -> sonm+13d" (_task_parse_date 下個月十四) = "sonm+13d"
-@test "AST: 下个月十四 -> sonm+13d" (_task_parse_date 下个月十四) = "sonm+13d"

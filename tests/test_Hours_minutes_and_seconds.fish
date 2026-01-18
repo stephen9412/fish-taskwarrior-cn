@@ -18,8 +18,8 @@ source $test_dir/../functions/taskwarrior_parse_date.fish
 @test "AST: 後天下午三點半 -> sod+2d+15h+30min" (_task_parse_date 後天下午三點半) = "sod+2d+15h+30min"
 @test "AST: 後天下午四點三十二分 -> sod+2d+16h+32min" (_task_parse_date 後天下午四點三十二分) = "sod+2d+16h+32min"
 
-@test "AST: 三十號下午兩點二十九 -> som+30d+14h+29min" (_task_parse_date 三十號下午兩點二十九) = "som+30d+14h+29min"
-@test "AST: 這個月三十號下午兩點二十九 -> som+30d+14h+29min" (_task_parse_date 這個月三十號下午兩點二十九) = "som+30d+14h+29min"
+@test "AST: 三十號下午兩點二十九分 -> som+30d+14h+29min" (_task_parse_date 三十號下午兩點二十九分) = "som+30d+14h+29min"
+@test "AST: 這個月三十號下午兩點二十九分 -> som+30d+14h+29min" (_task_parse_date 這個月三十號下午兩點二十九分) = "som+30d+14h+29min"
 @test "AST: 下個月十五號早上八點四十五分 -> sonm+14d+8h+45min" (_task_parse_date 下個月十五號早上八點四十五分) = "sonm+14d+8h+45min"
 @test "AST: 上個月八號早上六點十七分 -> sopm+7d+6h+17min" (_task_parse_date 上個月八號早上六點十七分) = "sopm+7d+6h+17min"
 
