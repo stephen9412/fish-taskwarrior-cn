@@ -9,7 +9,7 @@ Let Taskwarrior Speak Chinese 🗣️ — Manage Tasks the Natural Way
 
 > 💡 **Find this useful? Give it a ⭐️ Star!** It's the best encouragement for open source developers and helps more people discover this project.
 
-## Why Did I Build This?
+## 🤔 Why Did I Build This?
 
 When thinking in Chinese, nobody wants to switch input methods to type `due`, `scheduled`, `priority`, or remember whether "next Friday" is `next Friday` or `Friday next` in English. Oh, sorry, my English isn't good enough.
 
@@ -17,7 +17,9 @@ When thinking in Chinese, nobody wants to switch input methods to type `due`, `s
 
 So I built this package. **Let you manage tasks with your native language intuition, without compromising your brain for tools.**
 
-## Quick Demo
+## 🚀 Quick Demo
+
+![Add Task Demo](.github/assets/add_task.gif)
 
 After installation, you can use Taskwarrior like this:
 
@@ -40,7 +42,7 @@ task add 整合測試 依賴：42 預估耗時：3小時 排程：明天下午�
 
 **Language Support:** Both Traditional and Simplified Chinese. Based in Taiwan with Taiwan-style expressions, but tried to cover mainland and Hong Kong/Macau usage as much as possible. Welcome Issues or PRs for regional expression differences (I really don't know how people in Northeast China say "next Friday").
 
-## Installation
+## 📦 Installation
 
 ### Using Fisher (Recommended, Time-Saving)
 
@@ -68,7 +70,7 @@ After installation, restart Fish Shell or run `source ~/.config/fish/config.fish
 
 Done! You can now start managing tasks in Chinese.
 
-## Core Features
+## ✨ Core Features
 
 ### 🏷️ Chinese Keywords
 
@@ -107,6 +109,8 @@ task add 備份資料庫 循環：daily 排程：早上兩點
 **💡 Pro Tip:** Supports both full-width colon (`：`) and half-width colon (`:`), no need to switch input methods! (No more crazy switching between Chinese and English)
 
 ### ⌨️ Smart Space Completion
+
+![Smart Completion Demo](.github/assets/modify_task.gif)
 
 When modifying tasks, pressing space automatically completes the task description:
 
@@ -210,7 +214,7 @@ task add 交件 due:4d
 
 **This design makes date semantics more intuitive**—after all, nobody submits homework at midnight on time (unless you're a night owl).
 
-## Built-in Aliases & Abbreviations
+## ⚡ Built-in Aliases & Abbreviations
 
 To speed up daily operations, the package includes common aliases and abbreviations (less typing = more years to live):
 
@@ -256,7 +260,7 @@ tsto 42
 tdel 42
 ```
 
-## Advanced Configuration: Auto-Expansion
+## 🔧 Advanced Configuration: Auto-Expansion
 
 > ### ⚠️ **Important: This is NOT a Default Feature!**
 > 
@@ -299,7 +303,7 @@ task add "%" 專案： 優先級：L 標籤：
 
 This feature can **greatly improve task input efficiency**—once you get used to it, there's no going back.
 
-## Detailed Date Parsing
+## 📖 Detailed Date Parsing
 
 This section explains the parsing rules and advanced usage of Chinese date and time in detail.
 
@@ -422,7 +426,7 @@ task add 系統維護 due:三天後早上兩點 wait:兩天後
 task add 定期提醒 due:這個月三十號早上八點四十五分 循環：monthly
 ```
 
-## Implementation
+## 🔍 Implementation
 
 This package wraps the `task` function, secretly converting your Chinese input before command execution:
 
@@ -440,7 +444,7 @@ This package wraps the `task` function, secretly converting your Chinese input b
 
 The entire process is transparent to users, just type in Chinese.
 
-## Testing
+## 🧪 Testing
 
 Run test suite (ensure everything works):
 
@@ -463,7 +467,7 @@ Currently contains **325 test cases** (yes, 325), covering:
 
 All tests must pass, not one can fail.
 
-## FAQ
+## ❓ FAQ
 
 **Q: Why doesn't "今年三月二十" get parsed?**  
 A: Because "二十" lacks a unit (號/号/日), could be "March 20th" or something else. To avoid misjudgment, please write clearly as "今年三月二十號". (The program is not a psychic)
@@ -483,7 +487,7 @@ A: Refer to [Advanced Configuration](#advanced-configuration-auto-expansion) sec
 **Q: Why do `due` and `until` automatically +1 day?**  
 A: Because when people say "due in 3 days" they usually mean "before the end of that day in 3 days", not "exploding at 00:00:00 in 3 days". This design makes semantics more intuitive to humans (not computers).
 
-## Contributing
+## 🤝 Contributing
 
 Welcome to submit Pull Requests or open Issues!
 
@@ -500,15 +504,15 @@ Welcome to submit Pull Requests or open Issues!
 2. Add test cases for new features (no tests = didn't happen)
 3. Update README.md to document new features (let people know what you did)
 
-## License
+## 📄 License
 
 MIT License
 
-## Author
+## ✍️ Author
 
 [stephen9412](https://github.com/stephen9412)
 
-## Acknowledgements
+## 🙏 Acknowledgements
 
 - [Taskwarrior](https://taskwarrior.org/) - Most powerful command-line GTD tool
 - [Fish Shell](https://fishshell.com/) - Friendly and powerful shell
