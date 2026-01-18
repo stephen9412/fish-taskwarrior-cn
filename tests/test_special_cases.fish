@@ -22,7 +22,7 @@ source $test_dir/../functions/taskwarrior_parse_date.fish
 @test "AST: 星期三十 -> sow+29d" (_task_parse_date 星期三十) = "sow+29d"
 @test "AST: 禮拜三十 -> sow+29d" (_task_parse_date 禮拜三十) = "sow+29d"
 
-@test "AST: 這個月一百八十號 -> sow+179d" (_task_parse_date 這個月一百八十號) = "sow+179d"
+@test "AST: 這個月一百八十號 -> som+179d" (_task_parse_date 這個月一百八十號) = "som+179d"
 @test "AST: 上個月一百八十號 -> sopm+179d" (_task_parse_date 上個月一百八十號) = "sopm+179d"
 @test "AST: 下個月一百八十號 -> sonm+179d" (_task_parse_date 下個月一百八十號) = "sonm+179d"
 
